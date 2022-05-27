@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(236, 229, 229);
+}
+
+header{
+    text-align: center;
+    background-image: url(../imagenes/fondorgb.jpg);
+
+    h1{
+        color: rgb(252, 240, 240);
+    }
+    
+    
+    
+}
+
+.componentes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 150px;
+    margin-left: 350px;
+    margin-right: 350px;  
+
+    .imagen-componentes{
+        border: 2px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        margin: 10px;
+        padding: 10px;  
+    }
+}
+
