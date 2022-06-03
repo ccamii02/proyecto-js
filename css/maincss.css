@@ -1,22 +1,29 @@
 body {
-  background-color: #ece5e5; }
+  background-image: url(../imagenes/fondo-gamer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px); }
 
 header {
-  text-align: center;
-  background-image: url(../imagenes/fondorgb.jpg); }
+  text-align: center; }
   header h1 {
-    color: #fcf0f0; }
+    color: white; }
 
 .componentes {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  padding-top: 100px;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  justify-content: space-between;
-  margin: 150px;
-  margin-left: 350px;
-  margin-right: 350px; }
+  column-gap: 35px;
+  row-gap: 45px; }
   .componentes .imagen-componentes {
     border: 2px solid white;
     background-color: white;
     margin: 10px;
     padding: 10px; }
+
+hr {
+  margin: 0; }
+
+span {
+  color: white; }
