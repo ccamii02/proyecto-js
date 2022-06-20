@@ -11,8 +11,19 @@ header{
 
     h1{
         color: white;
+        text-shadow: 0.1em 0.1em black;
     }
 }
+h3{
+    text-align: center; 
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0.1em 0.1em black;
+}
+    .contenedor-h3{
+        border: 2px solid white;
+        margin: 20px;
+    }
 
 .componentes{
     display: grid;

@@ -1,9 +1,40 @@
-/*let numero = 0
-    for (let index = 1; index < 11 ; index++) {
-    let resultado = numero * index
-    console.log (index + numero + resultado)
-}*/
-///////////////////////////////////
+
+//creando titulo
+const header = document.querySelector("h1")
+const titulo = document.createElement("h1")
+titulo.textContent = "tienda de componentes"
+header.append(titulo)
+
+//recorrer menu de html
+let menu = document.getElementsByTagName('a')
+for(const menu2 of menu){
+    console.log(menu2.innerHTML)
+}
+//recorrer lista de componentes de html
+let componentes = document.getElementsByClassName('imagen-componentes')
+for(const componentes1 of componentes){
+    console.log(componentes1.innerHTML)
+}
+//creando otro subtitulo
+const main = document.querySelector("h3")
+document.querySelector("h3")
+const h3 = document.createElement("h3")
+h3.textContent = "Mas Vendidos"
+main.append (h3)
+//
+const listaproducto = [
+    {producto:'Placa de Video RTX2060', precio:80000},
+    {producto:'Placa de Video GTX1050ti', precio:70000},
+    {producto:'Procesador Ryzen 5-3600', precio:40000}
+]
+//creando elementos con DOM
+for (const producto1 of listaproducto){
+    const contenedor2 = document.createElement('h6')
+    contenedor2.innerHTML = `<h4> ${producto1.producto}</h4>
+                            <h6>precio: ${producto1.precio}</h6>`
+    main.append(contenedor2)                  
+}
+
 
 ///array con metodos de busqueda y filtrado
 const listaproductos1 = [
@@ -14,6 +45,7 @@ const listaproductos1 = [
     {id: 5, producto:'procesador ryzen 5-3600', precio:40000},
     {id: 6, producto:'procesador ryzen 5-5600', precio:35000}
 ]
+
 const buscar = listaproductos1.find(listaproductos1 => listaproductos1.id === 1)
 console.log(buscar);
 
@@ -93,8 +125,6 @@ cliente.addproduct(produc4)
 cliente.addproduct(produc5)
 cliente.addproduct(produc6)
 cliente.gettotal()
-
-
 
 ////////////
 //simulador interactivo con mis productos
