@@ -34,6 +34,28 @@ for (const producto1 of listaproducto){
                             <h6>precio: ${producto1.precio}</h6>`
     main.append(contenedor2)                  
 }
+//
+const boton = document.getElementById("comprar")
+boton.onclick = () => {console.log("Comprado!");}
+
+const boton2 = document.getElementById("comprar2")
+boton2.onclick = () => {console.log("Comprado!");}
+
+const boton3 = document.getElementById("comprar3")
+boton3.onclick = () => {console.log("Comprado!");}
+
+const boton4 = document.getElementById("comprar4")
+boton4.onclick = () => {console.log("Comprado!");}
+
+const boton5 = document.getElementById("comprar5")
+boton5.onclick = () => {console.log("Comprado!");}
+
+const boton6 = document.getElementById("comprar6")
+boton6.onclick = () => {console.log("Comprado!");}
+
+
+
+
 
 
 ///array con metodos de busqueda y filtrado
